@@ -1,0 +1,22 @@
+CREATE GLOBAL CUBE [CubeProyecto1Salida]
+STORAGE 'C:\Users\Administrator\Documents\Clase Almacenes de datos\Proyecto 1\CuboProyecto1Salida.cub'
+FROM [Cube_Proyecto1Salida] (
+
+MEASURE [Cube_Proyecto1Salida].[Fact Sales Salida Proyecto1 Count],
+MEASURE [Cube_Proyecto1Salida].[Pct Descuento Global],
+MEASURE [Cube_Proyecto1Salida].[Total],
+MEASURE [Cube_Proyecto1Salida].[Total Descuento],
+MEASURE [Cube_Proyecto1Salida].[Total Descuento Detalle],
+MEASURE [Cube_Proyecto1Salida].[Total Detalle],
+MEASURE [Cube_Proyecto1Salida].[Total Facturas],
+MEASURE [Cube_Proyecto1Salida].[Total Importe],
+MEASURE [Cube_Proyecto1Salida].[Total Importe Detalle],
+MEASURE [Cube_Proyecto1Salida].[Total Impuesto],
+MEASURE [Cube_Proyecto1Salida].[Total Impuesto Detalle],
+
+DIMENSION [Cube_Proyecto1Salida].[Dim Articulo Proyecto1],
+DIMENSION [Cube_Proyecto1Salida].[Dim Cliente Proyecto1],
+DIMENSION [Cube_Proyecto1Salida].[Dim Salida Proyecto1],
+DIMENSION [Cube_Proyecto1Salida].[Dim Time Proyecto1],
+DIMENSION [Cube_Proyecto1Salida].[Dim Vendedor Proyecto1]
+)
